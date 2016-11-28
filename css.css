@@ -1,0 +1,311 @@
+
+body {
+  overflow-x:hidden;
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: sans ;
+  color: rgb(46, 45, 51);
+  -webkit-font-smoothing: antialiased;
+
+}
+.homewrap {
+  display:flex;
+}
+.navarea {
+  flex: initial;
+  width: 135px
+
+}
+.homesection {
+  flex: 1;
+
+}
+.logo {
+    background-image: url(http://i.imgur.com/n51T9yJ.png);
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    max-width: 100px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 80px;
+    padding: 0;
+    margin: 0 0 0 20px;
+}
+.navarea nav ul {
+
+  list-style: none;
+  text-align: right;
+  margin-right: 20px;
+
+}
+.navarea nav ul li a, .mobilenavbar ul li a {
+  color: #999;
+  text-decoration: none;
+}
+.navarea nav ul li a:hover , .mobilenavbar ul li a:hover  {
+  color: black;
+}
+.navarea nav ul li:nth-child(5) {
+  margin-top: 60vh;
+}
+.navarea i {
+  display: none;
+}
+.mobilenavbar ul {
+  display:none ;
+  list-style: none;
+  text-align: center;
+}
+
+
+
+.info {
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  width: 50%;
+  line-height: 1;
+  margin: 10px;
+
+}
+#education div ul {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+#education div ul li {
+  list-style: none;
+  display: inline-block;
+  width: 100%;
+}
+.exp {
+
+  align-items: center;
+  color: white;
+  justify-content: center;
+  font-size: 20px;
+  width: 90%;
+  height: 200px;
+  background-color: lightblue;
+  border: solid 2px white;
+  margin: 10px;
+}
+.exp:hover {
+  border: solid 4px white;
+  font-size: 24px;
+}
+.exp p:nth-child(2th) {
+  margin-top: 100px;
+}
+.exp p a {
+  text-decoration: none;
+  color: white;
+}
+#education div {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.navarea div {
+      display: block;
+      position: fixed;
+}
+
+
+.portfoliobox {
+  margin-top: 20px;
+
+  display: inline-block;
+  list-style: none;
+  width: 45%;
+  height: 300px;
+
+}
+
+#intro, #about, #education, #portfolio, #contact  {
+
+  display: block;
+    background-color: rgb(252, 247, 247);
+}
+
+
+
+
+
+.stack {
+  margin-bottom: 100px;
+  font-size: 20px;
+  color: white;
+  background-color: lightblue;
+}
+.stack ul {
+  list-style: none;
+}
+.stack ul li {
+  display: inline-block;
+  font-style: impact ;
+
+
+}
+.stack ul li:before {
+  content: "\00B7";
+  display: inline-block;
+  margin-right: 0.5em;
+}
+#about {
+
+  overflow: hidden;
+}
+#intro {
+  margin-top: 50px;
+  background-image: url(http://i.imgur.com/wrUSUzR.png);
+  background-size: cover;
+  background-position: center bottom;
+
+
+}
+#intro div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#intro h2 {
+
+  background-color: rgba(255,255,255,0.6);
+  color: rgb(63, 63, 66);
+  font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 6rem;
+  line-height: 1;
+}
+#intro p {
+  display: block;
+  background-color: rgba(255,255,255,0.6);
+  color: rgb(237,18,18);
+font-family: 'Abhaya Libre', serif;
+  font-weight: 400;
+  font-size: 15rem;
+  line-height: 1;
+}
+
+.info {
+  font-size: 0.75em;
+}
+#portfolio {
+  margin-top: 20px;
+}
+#portfolio ul {
+  background-color: lightblue;
+
+}
+#portfolio ul li {
+  display:  inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+  transition: opacity 300ms ease-in-out;
+}
+#portfolio ul li:hover {
+  opacity: 0.6;
+}
+#portfolio ul li a {
+  text-decoration: none;
+  font-size: 1.5em;
+
+}
+@media screen and (max-width:501px){
+  .portfoliobox {
+    margin-top: 20px;
+    display: block;
+    list-style: none;
+    width: 90%;
+    height: 140px;;
+  }
+  #education div ul {
+    display: block;
+  }
+
+}
+#contact {
+
+  background-color: purple;
+  text-decoration: none;
+  color: white;
+  background: #e24040;
+  display: block;
+  width: 100%;
+  line-height: 6;
+  text-align: center;
+  font-size: 5vw;
+  font-weight: 300;
+}
+#contact a {
+  color: white;
+  text-decoration:none;
+}
+#portfolio h1 {
+  margin-top: -50px;
+}
+footer a i {
+  margin: 0 20px;;
+}
+@media screen and (max-width:775px){
+       #intro div h2 {
+        margin-left: 10px;
+      }
+       h2 , h1 {
+         font-size: 8vw!important;
+       }
+       .navarea nav ul {
+         display:none ;
+         list-style: none;
+         text-align: center;
+       }
+       .navarea nav ul li:nth-child(5){
+         margin-top: 0;
+       }
+       .homewrap {
+         display: block;
+       }
+       .navarea {
+
+         display: block-flex;
+         height: 80px;
+         width: 100%;
+       }
+       .homesection {
+         display: block;
+       }
+       .navarea nav {
+         display: ;
+       }
+      .navarea i {
+        position: flex;
+        left: 90%;
+        top:-45px;
+        display: block ;
+      }
+      .navarea div {
+        display: block;
+        position: relative;
+        background-color: white;
+        width: 100%;
+      }
+
+      #about {
+
+        overflow: hidden;
+      }
+      #intro {
+
+
+      }
+
+}
