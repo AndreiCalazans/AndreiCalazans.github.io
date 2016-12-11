@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body >
+  <div class="text-center">
+    <p class="text-center">The calculator</p>
+    <form name="calcform" class="">
+        <p>
+        <input type="text" name="display" id="display" readonly />
+        </p>
+        <p>
+        <input type="button" name="ac" value="AC" onClick="allClear()" />
+        <input type="button" name="ac" value="CE" onClick="clearEntry()" />
+        <input type="button" name="btnDi" value=&divide onClick="displayvalue(btnDi.value)"/>
+        <input  type="button" name="btnMul" value= x onClick="displayvalue(btnMul.value)"/>
+        </p>
+        <p>
+        <input type="button" name="btn9" value=9 onClick="displayvalue(btn9.value)" />
+        <input type="button" name="btn8" value = 8 onClick = "displayvalue(btn8.value)" />
+        <input type="button" name="btn7" value=7 onClick="displayvalue(btn7.value)" />
+        <input type="button" name="btnMinus" value= - onClick="displayvalue(btnMinus.value)"/>
+        </p>
+        <p>
+        <input type="button" name="btn6" value=6 onClick="displayvalue(btn6.value)" />
+        <input type="button" name="btn5" value = 5 onClick = "displayvalue(btn5.value)" />
+        <input type="button" name="btn4" value=4 onClick="displayvalue(btn4.value)" />
+        <input type="button" name="btnAdd" value= + onClick="displayvalue(btnAdd.value)"/>
+        </p>
+        <p>
+        <input type="button" name="btn3" value= 3 onClick="displayvalue(btn3.value)" />
+        <input type="button" name="btn2" value = 2 onClick ="displayvalue(btn2.value)" />
+        <input type="button" name="btn1" value= 1 onClick="displayvalue(btn1.v byalue)" />
+        <input type="button" name="btn=" value= "=" onClick="result()"/>
+        </p>
+        <p>
+        <input type="button" name="btn0" value= 0 onClick = "displayvalue(btn0.value)" />
+        <input type="button" name="btnp" value=. onClick="displayvalue(btnp.value)" />
+         </p>
+    </form>
+    <p class="bottom">Made with  <i class="fa fa-heart fa-0.5x" aria-hidden="true"> </i>  by Andrei Calazans</p>
+    <p class="bottom">Powered by pure JS</p>
+ </div>
+<script type="text/javascript" src="js2.js">
+
+</script>
+  </body>
+</html>
