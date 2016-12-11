@@ -29,6 +29,8 @@ function displayvalue(n){
     calcform.display.value = answer;
     answer = "";
     calcform.display.value = calcform.display.value.concat(n);
+  }else if( /[0-9]/.test(n) && typeof(answer) == "number" ){
+    calcform.display.value = n;
   }else {
     calcform.display.value = calcform.display.value.concat(n);
   }
@@ -59,6 +61,8 @@ document.addEventListener("keydown", function(n){
       calcform.display.value = answer;
       answer = "";
       calcform.display.value = calcform.display.value.concat(n.key);
+    }else if( /[0-9]/.test(n.key) && typeof(answer) == "number" ){
+      calcform.display.value = n.key;
     }else{
       calcform.display.value = calcform.display.value.concat(n.key);
     }
